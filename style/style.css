@@ -1,0 +1,245 @@
+<style>
+	body{
+		background-color: darkgrey;
+	}
+	header{
+		font-family: Arial, Helvetica, sans-serif;
+		width: 100%; 
+		margin-left: auto;
+		margin-right: auto;
+		background-color: ghostwhite;
+		min-height: 15%;
+	}
+	h1.logo{	
+		color: grey;
+		padding: 3px 10px 3px 25px;
+		margin: 1%;
+		font-size: 50px;
+		letter-spacing: 2px;
+		text-shadow:
+		2px 2px 0.5px lightgrey,
+		2px 2px 0.5px lightgrey,
+		2px 2px 0.5px lightgrey,
+		2px 2px 0.5px lightgrey;
+	}
+	h4.logo{
+		color: grey;
+		padding: 3px 10px 3px 25px;
+		margin: 1%;
+		font-size: 15px;
+		letter-spacing: 2px;
+		text-shadow:
+		2px 2px 0.5px lightgrey,
+		2px 2px 0.5px lightgrey,
+		2px 2px 0.5px lightgrey,
+		2px 2px 0.5px lightgrey;
+	}
+	p.out{
+		text-align: right;
+		font-size: 12px;
+		text-shadow: none;
+		padding-bottom:0;
+		margin-bottom:0;
+		letter-spacing: 0;
+	}
+	header a{
+		color: lightgrey;
+		text-decoration: none; 		
+	}
+	header a:hover{
+		color: darkgrey;		
+	}
+
+
+	nav{
+		background-color: yellowgreen;
+	}
+	.menu{
+		padding-left: 0;
+		list-style-type: none;
+		background-color: yellowgreen;
+		min-height: 40px;
+		line-height: 250%;
+		color: ghostwhite;
+		text-shadow:
+		0.5px 0.5px 0px grey,
+		0.5px 0.5px 0px grey,
+		0.5px 0.5px 0px grey,
+		0.5px 0.5px 0px grey;
+	}
+	.menu > li{
+		font-size: 15px;
+		text-align:center;
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-right: 1px solid ghostwhite;
+		width: 10%;
+	}
+	.menu>li:hover{
+		background-color: #8ABC21;
+		cursor: pointer;
+	}
+	.menu a{
+		color: ghostwhite;
+		text-decoration: none; 
+	}
+	
+	main{
+		font-family: Arial, Helvetica, sans-serif;
+		width: 100%; 
+		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: 80%;
+	}
+	.content{
+	float: left;
+	width: 20%;
+	padding: 2%;
+	background-color: lightgrey;
+	color: dimgrey;
+	min-height: 800px;
+	margin: auto;
+	margin-right: 1%;
+	}
+	p.content_title{
+	font-size: 20px;
+	color: #808080;
+	text-shadow:
+		0.5px 0.5px 0px #889999,
+		0.5px 0.5px 0px #889999,
+		0.5px 0.5px 0px #889999,
+		0.5px 0.5px 0px #889999;
+	}
+	.titles{
+	list-style-type: none;
+	color: dimgrey;
+	padding:0;
+	}
+	.titles > li{
+	color: #808080;
+	width:80%;
+	text-align: left;
+	padding: 7px;
+	}
+	.titles li > a:hover{
+	color: darkgrey;		
+	}
+	.titles a{
+	color: dimgrey;
+	text-decoration: none;		
+	}
+
+	
+	
+	
+	.results{
+	background-color: ghostwhite;
+	color: dimgrey;
+	float: left;
+	width: 62%;
+	padding-left: 5%;
+	padding-right: 8%;
+	padding-top: 3%;
+	min-height: 800px;
+	margin:auto;
+	overflow-x:auto;
+
+	}
+	.results > table{
+		width:100%;
+		font-size: 15px;
+		text-align: center;
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.results > table > th , td{
+		border-bottom: 1px solid #ddd;
+		padding-top : 15px;
+		padding-bottom : 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+		min-width: 40px;
+		max-width:50%;
+		font-size: 10px;
+	}
+	p.communicate{
+		color: lightgray;
+		font-size: 35px;
+		text-align: center;
+		padding:50px;
+		text-shadow: 2px 2px 2px lightgrey;
+	}
+	h1.result_title{
+		font-size: 35px;
+		text-shadow: 2px 2px 2px lightgrey;
+	}
+	.long > th,td{
+		white-space:normal;
+		text-align:left;
+	}
+	.error{
+		color:red;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	/* Ogólny kontener formularza */
+.register-form {
+	font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styl nagłówka formularza */
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styl dla wszystkich pól formularza */
+.register-form input,
+.register-form select {
+  margin: 0 auto;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;  
+}
+
+/* Styl dla przycisku */
+.register-form input[type="submit"]{
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Styl dla linków */
+.register-form a {
+  color: #4CAF50;
+}
+
+/* Styl dla komunikatu błędu */
+.register-form .error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Styl dla sukcesu */
+.register-form .success {
+  color: green;
+  margin-bottom: 10px;
+}
+
+	</style> 
